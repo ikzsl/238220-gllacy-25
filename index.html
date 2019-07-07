@@ -4,19 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header container">
-    <a class="logo"><img src="img/logo.png" alt="Логотип магазина Глейси"></a>
+
     <nav class="header-navigation">
+      <!-- Логотип - не ссылка! (убрать на главной) -->
+      <a href="index.html" class="logo"><img src="img/logo.png" width="154" height="64" alt="Логотип магазина Глейси"></a>
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a>
           <ul class="catalog-submenu">
             <li class="new"><a href="new.html">Новинки</a></li>
+
             <li><a href="#">Сливочное</a></li>
-            <li><a href="#">Щербет</a></li>
+            <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
             <li><a href="#">Мелорин</a></li>
           </ul>
@@ -26,16 +30,18 @@
         <li><a href="about.html">О Компании</a></li>
       </ul>
     </nav>
-    <form class="search" action="https://echo.htmlacademy.ru" method="get">
-      <label for="search">Найти</label>
-      <input id="search" type="text" class="search" placeholder="Что ищем?">
-    </form>
-    <a href="logon.html" class="logon">Вход</a>
-    <a href="shopping-cart.html" class="shopping-cart">Пусто</a>
-    <p class="work-time">
-      С 10 до 20, ежедневно<br>
-      <a href="tel:+78124502525" class="phone">8 812 450-25-25</a>
-    </p>
+    <div class="right-header">
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <label for="search">Найти</label>
+        <input id="search" type="text" placeholder="Что ищем?">
+      </form>
+      <a href="logon.html" class="logon">Вход</a>
+      <a href="shopping-cart.html" class="shopping-cart">Пусто</a>
+      <p class="work-time">
+        С 10 до 20, ежедневно<br>
+        <a href="tel:+78124502525" class="phone">8 812 450-25-25</a>
+      </p>
+    </div>
   </header>
   <main class="main">
     <section class="promo container">
@@ -70,7 +76,7 @@
           <div class="catalog-item-container">
             <span class="price">310&#8381;<span class="weight">/кг</span></span>
             <a href="#">
-              <img src="img/orange.jpg" width="267" height="267" alt="">
+              <img src="img/1-1.jpg" width="267" height="267" alt="">
               <span class="underlined">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
               <img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
             </a>
@@ -80,24 +86,10 @@
         </li>
         <li class="catalog-item">
           <div class="catalog-item-container">
-            <span class="price">310&#8381;<span class="weight">/кг</span></span>
+            <span class="price">380&#8381;<span class="weight">/кг</span></span>
             <a href="#">
-              <img src="img/orange.jpg" width="267" height="267" alt="">
-              <span class="underlined">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-              <img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
-            </a>
-            <a href="#" class="button quick-view">Быстрый просмотр</a>
-          </div>
-
-        </li>
-
-
-        <li class="catalog-item">
-          <div class="catalog-item-container">
-            <span class="price">310&#8381;<span class="weight">/кг</span></span>
-            <a href="#">
-              <img src="img/orange.jpg" width="267" height="267" alt="">
-              <span class="underlined">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+              <img src="img/1-2.jpg" width="267" height="267" alt="">
+              <span class="underlined">Сливочно-кофейное с кусочками шоколада</span>
               <img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
             </a>
             <a href="#" class="button quick-view">Быстрый просмотр</a>
@@ -108,24 +100,10 @@
 
         <li class="catalog-item">
           <div class="catalog-item-container">
-            <span class="price">310&#8381;<span class="weight">/кг</span></span>
+            <span class="price">355&#8381;<span class="weight">/кг</span></span>
             <a href="#">
-              <img src="img/orange.jpg" width="267" height="267" alt="">
-              <span class="underlined">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-              <img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
-            </a>
-            <a href="#" class="button quick-view">Быстрый просмотр</a>
-          </div>
-
-
-
-        </li>
-        <li class="catalog-item">
-          <div class="catalog-item-container">
-            <span class="price">310&#8381;<span class="weight">/кг</span></span>
-            <a href="#">
-              <img src="img/orange.jpg" width="267" height="267" alt="">
-              <span class="underlined">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+              <img src="img/1-3.jpg" width="267" height="267" alt="">
+              <span class="underlined">Сливочно-клубничное с присыпкой из белого шоколада</span>
               <img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
             </a>
             <a href="#" class="button quick-view">Быстрый просмотр</a>
@@ -136,30 +114,16 @@
 
         <li class="catalog-item">
           <div class="catalog-item-container">
-            <span class="price">310&#8381;<span class="weight">/кг</span></span>
+            <span class="price">415&#8381;<span class="weight">/кг</span></span>
             <a href="#">
-              <img src="img/orange.jpg" width="267" height="267" alt="">
-              <span class="underlined">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+              <img src="img/1-4.jpg" width="267" height="267" alt="">
+              <span class="underlined">Сливочное крем-брюле с карамельной подливкой</span>
               <img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
             </a>
             <a href="#" class="button quick-view">Быстрый просмотр</a>
           </div>
 
-        </li>
 
-
-        <li class="catalog-item">
-          <div class="catalog-item-container">
-            <span class="price">310&#8381;<span class="weight">/кг</span></span>
-            <a href="#">
-              <img src="img/orange.jpg" width="267" height="267" alt="">
-              <span class="underlined">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-              <img src="img/hit.png" alt="Хит" width="61" height="61" class="hit">
-            </a>
-            <a href="#" class="button quick-view">Быстрый просмотр</a>
-          </div>
-
-        </li>
 
 
 
